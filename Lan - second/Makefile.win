@@ -1,15 +1,15 @@
-# Project: 汉诺塔
+# Project: 数正方形
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = 汉诺塔.o
-LINKOBJ  = 汉诺塔.o
+OBJ      = 数正方形.o
+LINKOBJ  = 数正方形.o
 LIBS     = -L"D:/2.dev c++/Dev-Cpp/MinGW64/lib" -L"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"D:/2.dev c++/Dev-Cpp/MinGW64/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/2.dev c++/Dev-Cpp/MinGW64/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = 汉诺塔.exe
+BIN      = 数正方形.exe
 CXXFLAGS = $(CXXINCS) -g3 -std=c++11
 CFLAGS   = $(INCS) -g3 -std=c++11
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-汉诺塔.o: 汉诺塔.cpp
-	$(CPP) -c 汉诺塔.cpp -o 汉诺塔.o $(CXXFLAGS)
+数正方形.o: 数正方形.cpp
+	$(CPP) -c 数正方形.cpp -o 数正方形.o $(CXXFLAGS)

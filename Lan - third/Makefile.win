@@ -1,17 +1,17 @@
-# Project: 高塔1
+# Project: 封闭图形个数
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = 高塔.o
-LINKOBJ  = 高塔.o
-LIBS     = -L"D:/2.dev c++/Dev-Cpp/MinGW64/lib" -L"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+OBJ      = 封闭图形个数.o
+LINKOBJ  = 封闭图形个数.o
+LIBS     = -L"D:/2.dev c++/Dev-Cpp/MinGW64/lib" -L"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg -g3
 INCS     = -I"D:/2.dev c++/Dev-Cpp/MinGW64/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/2.dev c++/Dev-Cpp/MinGW64/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/2.dev c++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = 高塔1.exe
-CXXFLAGS = $(CXXINCS) -g3 -std=c++11
-CFLAGS   = $(INCS) -g3 -std=c++11
+BIN      = 封闭图形个数.exe
+CXXFLAGS = $(CXXINCS) -pg -g3 -std=c++11
+CFLAGS   = $(INCS) -pg -g3 -std=c++11
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-高塔.o: 高塔.cpp
-	$(CPP) -c 高塔.cpp -o 高塔.o $(CXXFLAGS)
+封闭图形个数.o: 封闭图形个数.cpp
+	$(CPP) -c 封闭图形个数.cpp -o 封闭图形个数.o $(CXXFLAGS)
